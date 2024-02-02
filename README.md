@@ -65,3 +65,5 @@ DB_DATABASE=laravel_xml_2_persons
 DB_USERNAME=root
 DB_PASSWORD=
 ```
+
+- 1. Lépés: adatokat tartalmazó xml létrehozása és hozzáadása a projekthez (Feladatkiirás 1.pontja)

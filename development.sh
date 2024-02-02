@@ -1,3 +1,5 @@
+#megvalósítás - nulladik fázis - a környezet létrehozása
+
 aliases
 cdwww
 composer create-project --prefer-dist laravel/laravel laravel-xml-2-persons
@@ -26,8 +28,14 @@ ctrl-c
 
 git init
 git add .
-git commit -m "initial commit"
+git status
+git commit -m "initial commit - phase 0"
 git branch -M main
 git remote add origin https://github.com/gerzsony/laravel-xml-2-persons.git
 git push -u origin main
 
+
+# megvalósítás 1. fázis - xml létrehotása és berakása a Repo -ba
+
+touch "persons.xml"
+#edit it

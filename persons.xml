@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<persons>
+  <person>
+    <azonosito>1</azonosito>
+    <adoazonositojel>778899112</adoazonositojel>
+    <teljesnev>Ügyvezető Mihály</teljesnev>
+    <egyebid>1</egyebid>
+    <belepes>2015.09.08</belepes>
+    <kilepes>2021.09.08</kilepes>
+    <emailcim>ugyvezeto.mihaly@gmail.com</emailcim>
+  </person>
+  <person>
+    <azonosito>2</azonosito>
+    <adoazonositojel>778899113</adoazonositojel>
+    <teljesnev>Gipsz Jakab</teljesnev>
+    <egyebid>23</egyebid>
+    <belepes>2019.02.08</belepes>
+    <kilepes>2023.11.18</kilepes>
+    <emailcim>gipsz.jakab@gmail.com</emailcim>
+  </person>
+  <person>
+    <azonosito>3</azonosito>
+    <adoazonositojel>778899114</adoazonositojel>
+    <teljesnev>Teszt Elek</teljesnev>
+    <egyebid>31</egyebid>
+    <belepes>2021.05.08</belepes>
+    <kilepes>2022.11.20</kilepes>
+    <emailcim>gipsz.jakab@gmail.com</emailcim>
+  </person>
+  <person>
+    <azonosito>4</azonosito>
+    <adoazonositojel>778899115</adoazonositojel>
+    <teljesnev>Kis Röffencs</teljesnev>
+    <egyebid>41</egyebid>
+    <belepes>2022.08.08</belepes>
+    <kilepes>2022.11.20</kilepes>
+    <emailcim>kis.roffencs@yahoo.com</emailcim>
+  </person>
+  <person>
+    <azonosito>5</azonosito>
+    <adoazonositojel>778899116</adoazonositojel>
+    <teljesnev>Misi Mókus</teljesnev>
+    <egyebid>51</egyebid>
+    <belepes>2022.09.08</belepes>
+    <kilepes>2022.12.20</kilepes>
+    <emailcim>misimokus@kalakaegyuttes.com</emailcim>
+  </person>
+</persons>
