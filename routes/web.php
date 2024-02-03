@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PersonController;
+use App\Http\Controllers\LogController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,3 +24,9 @@ Route::get('/', function () {
 
 Route::get('/xmlupload', [PersonController::class, 'create']);
 Route::post('/xmlupload', [PersonController::class, 'store']);
+
+//Person and Log views
+
+Route::get('/persons', [PersonController::class, 'index']);
+Route::get('/persons/{id}', [PersonController::class, 'show']);
+Route::get('/logs', [LogController::class, 'index']);

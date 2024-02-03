@@ -72,3 +72,52 @@ DB_PASSWORD=
 lényegtelen (elődefiniált) adattáblák létrehozásának megakadályozása
 
 - 3. Lépés - XML feltöltő felület, XML feldolgozó controller létrehozása, feldolgozás eredményének elsőkörös megjelenítése, xml validálás, log bejegyzések létrehozása Feladatkiírás (3-6) pontjai
+
+- 4. Lépés - Logs és Persons táblák megjelenítő felületei (feladatkiírás 7-es pontja)
+
+## Telepítés saját gépre
+
+- git repo lehúzása a gépre / vagy a linken a .zip fájl lehúzása
+
+- adatbázis létrehozása egy mysql szerveren (konzolból vagy segítség itt: laravel_xml_2_persons.sql )
+
+- .env állományban beállítani az (üres) adatbázis kapcsolati adatait
+
+- állományok frissítése
+
+- rendszer elindítása
+
+```
+git clone https://github.com/gerzsony/laravel-xml2persons.git
+
+mysql -u root -p
+create database laravel_xml_2_persons;
+ctrl-c 
+
+#setting up .env file (database section) Example is here: 
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=xml2persons
+DB_USERNAME=root
+DB_PASSWORD=
+
+
+#filling database
+php artisan migrate
+
+#start application with sail
+php artisan serve
+
+#check localhost:8000
+```
+
+Készítette: Gerhát Sándor
+
+Linkedin profil: https://www.linkedin.com/in/sandor-gerhat/
+
+A programkód elérhetősége a Github-on: https://github.com/gerzsony/laravel-xml-2-persons
+
+Működő tesztfelület: http://xml2persons.dev.probaljaki.hu/
+
+A teljes forráskód tömörítve letölthető itt is: http://xml2persons.dev.probaljaki.hu/gs_xml2_persons.zip

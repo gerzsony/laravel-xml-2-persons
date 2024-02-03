@@ -27,7 +27,7 @@
             <a class="nav-link mx-2" href="/xmlupload"> Xml fájl feltöltő </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-2" href="/persons"> Felhasználók </a>
+            <a class="nav-link mx-2" href="/persons"> Személyek </a>
           </li>
           <li class="nav-item">
             <a class="nav-link mx-2" href="/logs"> Logok </a>

@@ -13,12 +13,9 @@ class PersonController extends Controller
      */
     public function index()
     {
-        /*
         $persons = Person::all();
-        return view('persons.index', compact('persons'));
-        */        
+        return view('persons.index', compact('persons'));       
     }
-
 
 
     /**
@@ -127,17 +124,14 @@ class PersonController extends Controller
         return $PersonSaved;
     }
 
-
-
-
-
-
     /**
      * Display the specified resource.
      */
     public function show(string $id)
     {
-        //
+        //$person = Person::find($id);
+        $person = Person::where('person_id', $id)->first();
+        return view('persons.show', compact('person'));
     }
 
  

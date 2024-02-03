@@ -89,3 +89,15 @@ git status
 git add .
 git commit -m "xml processor (controller, view, menu, blade modifications) added - original description point 3-6"
 git push
+
+
+#megvalósítás negyedik fázis - logs és persons rekordok megjelenítője, egyéb simogatások
+
+touch "resources/views/persons/show.blade.php"
+
+#edit some blades and controllers
+
+git status
+git add .
+git commit -m "Logs and Persons views added - original description point 7. Contact data, project descriptions added. Create sql added."
+git push
