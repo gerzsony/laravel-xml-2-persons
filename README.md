@@ -67,3 +67,8 @@ DB_PASSWORD=
 ```
 
 - 1. Lépés: adatokat tartalmazó xml létrehozása és hozzáadása a projekthez (Feladatkiirás 1.pontja)
+
+- 2. Lépés - Adatmodell létrehozása Laravelben. Merge-lés az adatbázissal. Egyedi azonosítókra való figyelés az adatmodellben. (feladatkiirás 2,4-es pontja)
+lényegtelen (elődefiniált) adattáblák létrehozásának megakadályozása
+
+- 3. Lépés - XML feltöltő felület, XML feldolgozó controller létrehozása, feldolgozás eredményének elsőkörös megjelenítése, xml validálás, log bejegyzések létrehozása Feladatkiírás (3-6) pontjai

@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PersonController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +17,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+// Xml upload related routes
+
+Route::get('/xmlupload', [PersonController::class, 'create']);
+Route::post('/xmlupload', [PersonController::class, 'store']);

@@ -39,3 +39,53 @@ git push -u origin main
 
 touch "persons.xml"
 #edit it
+
+git status
+git add .
+git status
+git commit -m "persons.xml file added - first task in original description"
+git push
+
+# megvalósítás 2. fázis - adattáblák létehozása 
+
+#remove unnecessary files from /database/migrations
+
+composer remove laravel/sanctum
+composer update
+
+#create new tables
+php artisan make:model Person --migration
+php artisan make:model Log --migration
+
+#edit migration data models
+php artisan migrate:fresh
+
+git status
+git rm "database/migrations/2014_10_12_000000_create_users_table.php"
+git rm "database/migrations/2014_10_12_100000_create_password_reset_tokens_table.php"
+git rm "database/migrations/2019_08_19_000000_create_failed_jobs_table.php"
+git rm "database/migrations/2019_12_14_000001_create_personal_access_tokens_table.php"
+
+git add .
+git status
+git commit -m "database migration added - original description point 2, 4"
+git push
+
+#megvalósítás 3. fázis - xml feltöltéssel kapcsolatos teendők
+
+mkdir "resources/views/persons"
+mkdir "resources/views/logs"
+touch "resources/views/persons/create.blade.php"
+touch "resources/views/persons/index.blade.php"
+touch "resources/views/logs/index.blade.php"
+touch "resources/views/base.blade.php"
+
+php artisan make:controller PersonController --resource
+php artisan make:controller LogController --resource
+
+#edit xml uploding related routes, views and controllers
+
+git status
+git add .
+git commit -m "xml processor (controller, view, menu, blade modifications) added - original description point 3-6"
+git push
