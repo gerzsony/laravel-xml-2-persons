@@ -129,8 +129,10 @@ class PersonController extends Controller
      */
     public function show(string $id)
     {
-        //$person = Person::find($id);
-        $person = Person::where('person_id', $id)->first();
+		$person = Person::where('person_id', $id)->first();
+		if(is_null($person)){
+		   return abort(404);
+		}
         return view('persons.show', compact('person'));
     }
 
