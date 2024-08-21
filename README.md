@@ -112,12 +112,3 @@ php artisan serve
 #check localhost:8000
 ```
 
-Készítette: Gerhát Sándor
-
-Linkedin profil: https://www.linkedin.com/in/sandor-gerhat/
-
-A programkód elérhetősége a Github-on: https://github.com/gerzsony/laravel-xml-2-persons
-
-Működő tesztfelület: http://xml2persons.dev.probaljaki.hu/
-
-A teljes forráskód tömörítve letölthető itt is: http://xml2persons.dev.probaljaki.hu/gs_xml2_persons.zip
